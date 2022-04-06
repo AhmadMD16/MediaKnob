@@ -22,7 +22,7 @@ The components used for this build are:
 
 There is a few steps that needs to be done for this to be working. You will need to connect the components as shown in the following schematic. 
 
-<img src="https://github.com/AhmadMD16/MediaKnob/blob/main/images/Circuit.png" width="1190" height="457" alt="Schematic">
+![Schematic](https://github.com/AhmadMD16/MediaKnob/blob/main/images/Circuit.png)
 
 Next step is to install the Arduino file and upload it to your Arduino Nano. Once you've done that you can open up the Serial Monitor in the Arduino IDE and try to rotate the rotary encoder. If everything is hooked up correctly you should see a value changing between 0-100, that's the value for the volume. Last step is to download and run the Python file. Once that is done you will be good to go. Try to rotate the rotary encoder now and you will see the  volume changing. 
 
