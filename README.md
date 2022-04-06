@@ -2,7 +2,7 @@
 
 Volume and media controller built using an Arduino Nano and a rotary encoder.
 
-<img src="https://github.com/AhmadMD16/MediaKnob/blob/main/images/3D-printed-case.png" width="5472" height="2736" alt="3D-Model">
+![3D-model](https://github.com/AhmadMD16/MediaKnob/blob/main/images/3D-printed-case.png)
 
 ## Description
 
