@@ -34,7 +34,8 @@ port = find_port()
 board = serial.Serial(port, 9600)
 
 # The program starts here. This function is responsible for the adjustments of the volume.
-# Media can also be paused and played by single-pressing the button.
+# Media can be paused and played by single-pressing the button.
+# Also the volume will be muted when double pressing the button.
 def mode1():
     while True:
         response = board.readline().decode("latin-1").strip()
@@ -42,6 +43,8 @@ def mode1():
             mode2()
         elif response == "pause" or response == "play":
             pyautogui.press("playpause")
+        elif response == "mute":
+            pyautogui.press("volumemute")
         else:
             if currentRange == -70:
                 volume.SetMasterVolumeLevel(vol_calibration2(int(response)), None)
@@ -50,7 +53,7 @@ def mode1():
 
 # If you hold the button for 1 second the program will switch into what I call "shuffle mode" or mode 2.
 # This will let you switch between songs by rotating the rotary encoder clockwise or anti-clockwise.
-# Media can still be paused and played in this mode.
+# Media can still be paused, played and muted in this mode.
 def mode2():
     while True:
         response = board.readline().decode("latin-1").strip()
@@ -58,6 +61,8 @@ def mode2():
             mode1()
         elif response == "pause" or response == "play":
             pyautogui.press("playpause")
+        elif response == "mute":
+            pyautogui.press("volumemute")
         else:
             if(response == "nexttrack"):
                 pyautogui.press("nexttrack")

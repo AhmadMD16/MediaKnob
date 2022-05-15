@@ -86,10 +86,10 @@ void singleClick()
     Serial.println("pause");
 }
 
-// Has no function as of yet
+// Mutes the audio
 void doubleClick()
 {
-  // code
+  Serial.println("mute");
 }
 
 // When you hold the button, the program will switch to what I call "Shuffle mode" (mode 2)
