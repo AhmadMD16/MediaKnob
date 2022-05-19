@@ -177,7 +177,7 @@ void rotateLeft()
     // Previous song
     case 2:
       prev = prev - 1;
-      if (prev <= -8)
+      if (prev <= -4)
       {
         Serial.println("prevtrack");
         prev = 0;
@@ -201,7 +201,7 @@ void rotateRight()
     // Next song
     case 2:
       next = next + 1;
-      if (next >= 8)
+      if (next >= 4)
       {
         Serial.println("nexttrack");
         next = 0;
