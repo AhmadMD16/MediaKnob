@@ -28,17 +28,17 @@ Next step is to install the Arduino file and upload it to your Arduino Nano. Onc
 
 You can press the rotary encoder once and it should pause/play music, while double pressing should mute the audio. If you hold down the button for one second you will enter what I call the "Shuffle mode". What it does is that if you want to skip to the next song or the previous, all you need to do is to rotate it either clockwise or counter clockwise. You can then go back to changing the volume by holding the rotary encoder for one second.
 
-### Controls
+## Controls
 
 - click: Play/Pause
 - double click: Mute/Un-mute
 - rotate: volume up and down
 - hold (1000 ms): Enter/Exit Shuffle mode
 
-### Dependencies
+## Dependencies
 
 This program only works for Windows.
 
-### Help
+## Help
 
 If you stumble upon any connection problems with the COM-ports, change the code in the find_port() function to the port your Arduino is connected to.
