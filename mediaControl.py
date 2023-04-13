@@ -27,6 +27,7 @@ def find_port():
         port = os.path.basename(ap)
         if port == 'COM3' or port == 'COM5':
             return port
+        else: quit()
 
 port = find_port()
 
